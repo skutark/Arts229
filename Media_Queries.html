@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Media Queries Template</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
+  <meta name="keywords" content="media query, layout, assignment">
+  <meta name="author" content="your name here">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this viewport setting is important for responsive web design -->
+
+  <style>
+body {
+font-family: sans-serif;
+background: #aaa;
+width: 80vw;
+max-width: 800px;
+margin:0 auto;
+font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+figure {
+  width: 30vw;
+  float: right;
+}
+
+figure::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+figure::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+figcaption {
+  text-align: center;
+}
+nav ul {list-style-type: none;}
+
+nav ul a {display: block;
+text-decoration: none;
+background-color: darkseagreen;
+text-align: center; padding: .5rem; margin: .2rem;}
+
+.clearFloat {float: none; clear:both;}
+
+@media screen and (min-width: 600px) {
+body {background: #333;
+color: #ccc;
+}
+
+figure {
+  width: 15vw;
+}
+nav ul a {float:left; width: 100px;}
+}
+
+@media screen and (min-width: 1200px) {
+body {background: #000;
+color: white;
+font-size: 24px;}
+
+}
+
+article {
+  float: left;
+  width: 60%;
+  margin-right: 5%;
+}
+section {float: none; clear: both;}
+
+nav ul a {float:left; width: 200px;}
+}
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>This is the page heading</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+<br class="clearFloat"/ />
+  <article>
+    <h1>This is the article heading</h1>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those <a href="https://chad-bennett.github.io/home/post/lorem-ipsum/" target="_blank">lorem-ipsum generators</a> or you could write your own content. The choice is up to you as the designer. </p>
+  </article>
+
+  <aside>
+    <figure>
+      <img src="images/something.png" alt="image alt text goes here" title="image" height="100px" width="100px" />
+      <figcaption>Figure caption goes here</figcaption>
+    </figure>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+  </aside>
+
+  <section>
+    <h1>This is the section heading</h1>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+    <blockquote>
+      This is a blockquote in the middle of the section. You can style this however you want. You can probably also come up with better text than this boring explanation.
+    </blockquote>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+  </section>
+
+  <footer>
+    <hr />
+    &copy; Your Name Enterprises
+  </footer>
+
+</body>
+
+</html>
