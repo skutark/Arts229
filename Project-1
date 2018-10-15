@@ -81,17 +81,19 @@ nav ul a {float:left; width: 200px;}
 
 <body>
   <header>
-    <h1>Temples</h1>
+    <h1>Tame Impala</h1>
   </header>
 
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="https://www.youtube.com/user/TemplesOfficial">Music</a></li>
-      <li><a href="http://www.templestheband.com/contact/">Contact</a></li>
-      <li><a href="https://www.facebook.com/templesofficial/">Facebook</a></li>
-      <li><a href="https://twitter.com/templesofficial?lang=en">Twitter</a></li>
-      <li><a href="https://www.instagram.com/templesofficial/?hl=en">Instagram</a></li>
+      <li><a href="https://www.youtube.com/channel/UCdI8MAC5HoPJSJ4zrgDDI-Q?reload=9">Music</a></li>
+      <li><a href="https://official.tameimpala.com/pages/contact">Contact</a></li>
+      <li><a href="https://www.facebook.com/tameimpala">Facebook</a></li>
+      <li><a href="https://twitter.com/tameimpala?lang=en">Twitter</a></li>
+      <li><a href="https://www.instagram.com/tame__impala/">Instagram</a></li>
+      <li><a href="https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb?autoplay=true&v=A">Spotify</a></li>
+      <li><a href=""></a></li>
     </ul>
   </nav>
 
@@ -112,7 +114,7 @@ nav ul a {float:left; width: 200px;}
 </div>
 
 <iframe width="560" height="315"
-src="https://www.youtube.com/embed/3mbiG5E09b0"
+src="https://www.youtube.com/watch?v=LnKUD_OztRE"
 frameborder="0" allow="autoplay; encrypted-media"
 allowfullscreen></iframe>
 
@@ -121,7 +123,7 @@ allowfullscreen></iframe>
     <p>The band was initially formed as a home studio project in mid 2012. Warmsley and Bagshaw had known each other for years before these projects. It was at this point that they were in rival bands based in their hometown of Kettering. The duo had later worked together in The Moons, with Bagshaw also having sessioned with the Lightning Seeds and co-fronted another earlier Kettering band Sukie who formed in 2006 and charted at No 1 in the UK Indie Chart with their debut single "Pink-A-Pade". Sukie were featured in the fanzine "Siren", edited and created by Warmsley to document Kettering's music scene.</p>
 
     <figure>
-      <img src="Temples/Temples6.jpg" alt="image alt text goes here" title="image" />
+      <img src="TameImpala/TameImpala1.jpg" alt="image alt text goes here" title="image" />
       <figcaption>Temples pose for the camera</figcaption>
     </figure>
 
@@ -130,7 +132,7 @@ allowfullscreen></iframe>
     </blockquote>
 
     <figure>
-      <img src="Temples/Temples5.jpg" alt="image alt text goes here" title="image" />
+      <img src="TameImpala/TameImpala2.jpg" alt="image alt text goes here" title="image" />
       <figcaption>
         Temples pose for the camera</figcaption>
     </figure>
@@ -139,7 +141,7 @@ allowfullscreen></iframe>
     <p>In an interview with Sound of Boston, lead vocalist James Bagshaw noted that signing on to Heavenly Records did not change their recording process. "Nothing changed, everything stayed exactly the same... At no point did they say, you know, go into the studio. If they did, we probably wouldn’t have signed to them because we liked the idea of what we were doing," Bagshaw stated. Temples' personal gear during recording comes from various gear from Vox and Orange Amps, along with synthesizers like the Roland VK-8 Combo Organ.</p>
 
     <figure>
-      <img src="Temples/Temples2.jpg" alt="image alt text goes here" title="image" />
+      <img src="TameImpala/TameImpala3.jpg" alt="image alt text goes here" title="image" />
       <figcaption>
         Temples pose for the camera</figcaption>
     </figure>
@@ -149,7 +151,7 @@ allowfullscreen></iframe>
     </p>
 
     <figure>
-      <img src="Temples/Temples3.jpg" alt="image alt text goes here" title="image" />
+      <img src="TameImpala/TameImpala4.jpg" alt="image alt text goes here" title="image" />
       <figcaption>
         Temples pose for the camera</figcaption>
     </figure>
@@ -159,7 +161,7 @@ allowfullscreen></iframe>
     </blockquote>
 
     <figure>
-      <img src="Temples/Temples5.jpg" alt="image alt text goes here" title="image" />
+      <img src="TameImpala/TameImpala5.jpg" alt="image alt text goes here" title="image" />
       <figcaption>
         Temples pose for the camera</figcaption>
     </figure>
@@ -170,7 +172,7 @@ allowfullscreen></iframe>
     </p>
 
     <figure>
-      <img src="Temples/Temples.jpg" alt="image alt text goes here" title="image" />
+      <img src="TameImpala/TameImpala6.jpg" alt="image alt text goes here" title="image" />
       <figcaption>Temples in their most recent photo posting</figcaption>
     </figure>
 
