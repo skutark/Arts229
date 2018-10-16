@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS Grid </title>
+<body>
+<div class='wrapper'>
+  <div class='letter'>
+    A
+  </div>
+  <div class='letter'>
+    B
+    </div>
+  </div>
+
+  .wrapper {
+    display: grid;
+  }
+  </body>
+  </html>
