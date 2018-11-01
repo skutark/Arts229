@@ -1,510 +1,224 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-<head>
-    <meta charset="utf-8">
-    <title>OAK - HTML Theme</title>
-    <meta name="description" content="">
-    <meta name="msapplication-tap-highlight" content="yes" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-    <!-- Google Web Font -->
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-    <!--  Bootstrap 3-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
+    <p>Photographer and Web Designer.</p>
+    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-    <!-- OWL Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
 
-    <!--  Slider -->
-    <link rel="stylesheet" href="css/jquery.kenburnsy.css">
-
-    <!-- Animate -->
-    <link rel="stylesheet" href="css/animate.css">
-
-    <!-- Web Icons Font -->
-    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="css/iconmoon.css">
-    <link rel="stylesheet" href="css/et-line.css">
-    <link rel="stylesheet" href="css/ionicons.css">
-
-    <!-- Magnific PopUp -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Tabs -->
-    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
-
-    <!-- Loader Style -->
-    <link rel="stylesheet" href="css/loader-1.css">
-
-    <!-- Costum Styles -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="favicon.ico">
-
-    <!-- Modernizer & Respond js -->
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-
-<body>
-
-    <!-- Preloader -->
-    <div class="cover"></div>
-
-    <div class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Menu Hamburger (Default) -->
-            <button class="main-menu-indicator" id="open-button">
-                <span class="line"></span>
-            </button>
-
-            <div class="menu-wrap" style="background-image: url(img/nav_bg.jpg)">
-                <div class="menu-content">
-                    <div class="navigation">
-                        <span class="pe-7s-close close-menu" id="close-button"></span>
-                        <div class="search-wrap js-ui-search">
-                            <input class="js-ui-text" type="text" placeholder="Search Here...">
-                            <span class="eks js-ui-close"></span>
-                        </div>
-                    </div>
-                    <nav class="menu">
-                        <div class="menu-list">
-                            <ul>
-                                <li class="menu-item-has-children"><a href="#">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">- Default</a></li>
-                                        <li><a href="index-architecture.html">- Architecture</a></li>
-                                        <li><a href="index-full-slider.html">- Slider Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="menu-item-has-children"><a href="#">Portfolio</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="portfolio-2column.html">-Portfolio 2 Column</a></li>
-                                        <li><a href="portfolio-3column.html">-Portfolio 3 Column</a></li>
-                                        <li><a href="portfolio-masonry.html">-Portfolio Masonry</a></li>
-                                        <li><a href="portfolio-dribbble.html">-Portfolio Dribbble</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-timeline.html">Blog Timeline</a></li>
-                                        <li><a href="single-blog.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-
-                    <div class="hidden-xs">
-                        <div class="menu-social-media">
-                            <ul>
-                               <li><a href="#"><i class="iconmoon-facebook"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-twitter"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-dribbble3"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-pinterest"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-linkedin2"></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="menu-information">
-                            <ul>
-                                <li><span>T:</span> 003 124 115</li>
-                                <li><span>E:</span> info@mail.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of Menu Hamburger (Default) -->
-
-        </div>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
     </div>
 
-    <div class="container">
-        <div class="slider-wrapper">
-            <div class="slider-description">
-                <div class="slider-description-inner">
-                    <h1>Pure<span>Elegance</span></h1>
-                </div>
-                <div class="cd-intro">
-                    <div class="cd-headline clip">
-                        <span class="cd-words-wrapper">
-                            <b class="is-visible">AWESOME THEME</b>
-                            <b>MODERN COMBINATION</b>
-                            <b>CREATIVE SOLUTIONS</b>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div id="slider-ef" class="slider-images-wrapper">
-                <img class="img-responsive" src="img/slider/image_1.jpg" alt="">
-                <img class="img-responsive" src="img/slider/image_2.jpg" alt="">
-                <img class="img-responsive" src="img/slider/image_3.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container margin-top">
-        <div class="history-wrapper">
-            <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
-                <div class="row">
-                    <article>
-                        <h1>HISTORY OF AGENCY</h1>
-                        <hr>
-                        <h4>WHO LOVES OR PURSUES OR DESIRES TO OBTAIN PAIN OF ITSELF, BUT BECAUSE OCCASIONALLY CIRCUMSTANCES OCCUR AND PAIN CAN PROCURE HIM SOME GREAT PLEASURE</h4>
-                        <p>
-                        <br/>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
-                    </article>
-                </div>
-            </div>
-            <div class="col-md-5 col-md-offset-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                <div class="row">
-                    <div id="history-images" class="owl-carousel">
-                        <div><img class="img-responsive center-block" src="img/about_img.jpg" alt="About"></div>
-                        <div><img class="img-responsive center-block" src="img/about_img2.jpg" alt="About"></div>
-                        <div><img class="img-responsive center-block" src="img/about_img3.jpg" alt="About"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container margin-top">
-        <div class="main-title">
-            <h1>WHY CHOOSE US?</h1>
-            <hr>
-            <h6>Except to obtain some advantage from it</h6>
-        </div>
-        <div class="services-home-page">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="services-icon">
-                        <span class="icon-tools"></span>
-                        <hr>
-                    </div>
-                    <h4>BRANDING</h4>
-                    <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-icon">
-                        <span class="icon-globe"></span>
-                        <hr>
-                    </div>
-                    <h4>PLAN OF WORK</h4>
-                    <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-icon">
-                        <span class="icon-paintbrush"></span>
-                        <hr>
-                    </div>
-                    <h4>ILUSTRATION</h4>
-                    <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container margin-top">
-        <div class="main-title">
-            <h1>OUR WORK</h1>
-            <hr>
-            <h6>Laborious to obtain some advantage from it</h6>
-        </div>
-        <div class="portfolio-wrapper">
-            <button class="nav">
-                <span class="icon-container">
-                    <span class="line line01"></span>
-                    <span class="line line02"></span>
-                    <span class="line line03"></span>
-                    <span class="line line04"></span>
-                </span>
-            </button>
-            <div class="works-filter">
-                <a href="javascript:void(0)" class="filter active" data-filter="mix">All</a>
-                <a href="javascript:void(0)" class="filter" data-filter="branding">Branding</a>
-                <a href="javascript:void(0)" class="filter" data-filter="web">Web Design</a>
-                <a href="javascript:void(0)" class="filter" data-filter="graphic">Graphic Design</a>
-            </div>
-            <div class="js-masonry">
-                <div class="row" id="work-grid">
-                    <!-- Begin of Thumbs Portfolio -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_1.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">250</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix web">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_2.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">60</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">WATCH-J</span>
-                                    <span class="info">NEW TREND FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix graphic">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_3.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">1060</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_4.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">900</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_5.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">979</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_6.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">1024</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_7.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">2048</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_8.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">256</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 mix branding">
-                        <div class="img home-portfolio-image">
-                            <img src="img/home-portfolio/img_9.jpg" alt="Portfolio Item">
-                            <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
-                                    <i class="ion-ios-heart-outline"></i>
-                                    <span class="like-product">Liked</span>
-                                    <span class="output">256</span>
-                                </a>
-                                <div class="details">
-                                    <span class="title">STYLE FASHION</span>
-                                    <span class="info">NEW BAG & STYLE FASHION</span>
-                                </div>
-                                <span class="btnBefore"></span>
-                                <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="load-more">
-                <a href="javascript:void(0)" id="load-more"><i class="icon-refresh"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="container margin-top">
-        <div class="newsletter">
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="newsletter-left">
-                        <div class="newsletter-left-inner">
-                            <h1>STAY INFORMED <br> WITH OUR <b>NEWSLETTER</b></h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="newsletter-right" style="background: url(img/newsletter-bg.jpg)">
-                        <div class="newsletter-right-inner">
-                            <form>
-                                <input type="text" name="newsletter" placeholder="ENTER YOUR EMAIL">
-                                <input type="submit" value="SUBSCRIBE">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer margin-top">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-2 col-sm-4 col-xs-12">
-                        <div class="footer-inner">
-                            <div class="footer-content">
-                                <h4>O.A.K THEME</h4>
-                                    <address>City 35 AM <br>Street 1395 p.n <br>your Country</address>
-                            </div>
-                        </div>
-                    </div>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
 
-                    <div class="col-md-2 col-md-push-8 col-sm-4 col-xs-12">
-                        <div class="footer-inner">
-                            <div class="footer-content">
-                               <h4>CONTACT INFO</h4>
-                                <p>
-                                    T:003 124 115 <br>
-                                    E:info@mail.com <br>
-                                    W:www.website.com
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
 
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="footer-inner">
-                            <div class="footer-content">
-                            <ul class="social-media">
-                                <li><a href="#"><i class="iconmoon-facebook"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-twitter"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-flickr2"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-dribbble3"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-pinterest"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-linkedin2"></i></a></li>
-                            </ul>
-                            <span class="copyright-mark">&copy; 2015 OAK, ALL RIGHTS RESERVED</span>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
     </div>
-    <a href="javascript:void(0)" class="scroll-top" id="scroll-top"><i class="pe-7s-angle-up"></i></a>
 
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <script data-pace-options='{ "ajax": false }' src="js/vendor/pace.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/classie.js"></script>
-    <script src="js/vendor/isotope.pkgd.min.js"></script>
-    <script src="js/vendor/jquery.velocity.min.js"></script>
-    <script src="js/vendor/jquery.kenburnsy.min.js"></script>
-    <script src="js/vendor/textslide.js"></script>
-    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src="js/vendor/tabs.js"></script>
-    <script src="js/ef-slider.js"></script>
-    <script src="js/vendor/owl.carousel.min.js"></script>
-    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendor/jquery.social-buttons.min.js"></script>
-    <script src="js/vendor/wow.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/ajax.js"></script>
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>Jane Doe saved us from a web disaster.</p><br>
+
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than Jane Doe.</p>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
