@@ -8,10 +8,34 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
-@media (max-width: 1000px) {
-  #header { position: fixed!important; }
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
 
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none;}
@@ -19,7 +43,7 @@ body {font-family: "Lato", sans-serif}
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
+<div class="topnav">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="Project_1Alt.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
@@ -39,10 +63,10 @@ body {font-family: "Lato", sans-serif}
   <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
   <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="Merch.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MERCH</a>
-  <a href="Extras.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXTRAS</a>
-  <a href="Media.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEDIA</a>
-  <a href="Photos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS</a>
+  <a href="Merch.html" class="w3-bar-item w3-button w3-padding-large "onclick="myFunction()">MERCH</a>
+  <a href="Extras.html" class="w3-bar-item w3-button w3-padding-large ">EXTRAS</a>
+  <a href="Media.html" class="w3-bar-item w3-button w3-padding-large ">MEDIA</a>
+  <a href="Photos.html" class="w3-bar-item w3-button w3-padding-large ">PHOTOS</a>
 </div>
 
 <!-- Page content -->
