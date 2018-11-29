@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+
+
 <title>Hello World!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,11 +10,57 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="animate.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.container {
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    svg {
+        max-width: 45rem;
+        width: 100%;
+        height: auto;
+        fill: none;
+        stroke: white;
+        stroke-width: 4;
+
+        tspan > tspan {
+            stroke-dasharray: 1500;
+            stroke-dashoffset: -1500;
+
+            @for $i from 1 through 15 {
+
+                &:nth-of-type(#{$i}) {
+                    animation: draw 300ms #{$i * 150}ms forwards;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@keyframes draw {
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}
 </style>
+</head>
 <body>
 
 <!-- Navbar -->
@@ -21,7 +70,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="About-Me.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
     <a href="Photos-Art.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS AND ART</a>
-    <a href="contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-padding-large w3-button" title="Experiments">EXPERIMENTS</button> <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -66,10 +115,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-teal w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">WELCOME TO THE HOME PAGE</h1>
-  <p class="w3-xlarge">A website powered by Atom and made by me!</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Click Here!</button>
+  <svg viewBox="0 0 1418 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<title>@WebDesignerMag</title>
+		<g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
+			<text id="@WebDesignerMag" stroke="#fff" fill="#645F5A" font-weight="normal" font-family="PermanentMarker-Regular, Permanent Marker" font-size="144">
+				<tspan x="3" y="109"><!--
+        --><tspan>W</tspan><!--
+        --><tspan>e</tspan><!--
+        --><tspan>l</tspan><!--
+        --><tspan>c</tspan><!--
+        --><tspan>o</tspan><!--
+        --><tspan>m</tspan><!--
+        --><tspan>e</tspan><!--
+				--></tspan>
+			</text>
+		</g>
+	</svg>
+
 </header>
+
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
@@ -95,7 +159,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
+      <h1 class="red" >Lorem Ipsum</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
