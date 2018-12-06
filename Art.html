@@ -14,11 +14,63 @@ body {font-family: "Raleway", Arial, sans-serif}
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
-  <!-- Header -->
-  <header class="w3-container w3-xlarge w3-padding-24">
-    <a href="#" class="w3-left w3-button w3-white">MY ART</a>
-    <a href="#about" class="w3-right w3-button w3-white">About</a>
-  </header>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="About-Me.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+      <a href="Photos-Art.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS AND ART</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="Experiments">EXPERIMENTS</button> <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="text-experiment.html" class="w3-bar-item w3-button">Experiment 1</a>
+          <a href="imageExperiment/Images.html" class="w3-bar-item w3-button">Experiment 2</a>
+          <a href="Media_Queries.html" class="w3-bar-item w3-button">Experiment 3</a>
+          <a href="flexbox.html" class="w3-bar-item w3-button">Experiment 4</a>
+          <a href="CSS_Grid.html" class="w3-bar-item w3-button">Experiment 5</a>
+          <a href="#" class="w3-bar-item w3-button">Experiment 6</a>
+        </div>
+      </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="Experiments">PROJECTS</button> <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Project_1Alt.html" class="w3-bar-item w3-button">Project 1</a>
+            <a href="#" class="w3-bar-item w3-button">Project 2</a>
+            <a href="#" class="w3-bar-item w3-button">Final Project</a>
+          </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="Experiments">EXPLORATIONS</button> <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">Exploration 1</a>
+            <a href="#" class="w3-bar-item w3-button">Exploration 2</a>
+            <a href="#" class="w3-bar-item w3-button">Exploration 3</a>
+          </div>
+
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-teal w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">EXPERIMENTS</a>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="text-experiment.html" class="w3-bar-item w3-button">Experiment 1</a>
+        <a href="imageExperiment/Images.html" class="w3-bar-item w3-button">Experiment 2</a>
+        <a href="Media_Queries.html" class="w3-bar-item w3-button">Experiment 3</a>
+        <a href="flexbox.html" class="w3-bar-item w3-button">Experiment 4</a>
+        <a href="CSS_Grid.html" class="w3-bar-item w3-button">Experiment 5</a>
+        <a href="#" class="w3-bar-item w3-button">Experiment 6</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">PROJECTS</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">EXPLORATIONS</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a>
+    </div>
+  </div>
 
   <!-- Photo Grid -->
   <div class="w3-row">
