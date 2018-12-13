@@ -13,26 +13,35 @@
 </head>
 
 <body class="w3-light-grey">
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-    <button class="w3-bar-item w3-button w3-large"
-    onclick="w3_close()">Close &times;</button>
-    <a href="Final-Project.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="About-Me" class="w3-bar-item w3-button">ABOUT ME</a>
-    <a href="Contact-Me.html" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="Photos-Art.html" class="w3-bar-item w3-button">PORTFOLIO</a>
-    <a href="Photography.html" class="w3-bar-item w3-button">PHOTOS</a>
-    <a href="Art.html" class="w3-bar-item w3-button">ART</a>
-  </nav>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:3000px">
 
-  <div id="main">
+    <!-- Navbar -->
+    <nav class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="Final-Project.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="About-Me.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+        <a href="Photos-Art.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
+        <a href="Photography.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS</a>
+        <a href="Art.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ART</a>
+        <a href="Contact-Me.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-teal w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+      </div>
+    </nav>
 
-  <div class="w3-teal">
-    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-    <div class="w3-container">
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="Final-Project.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="About-Me.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a>
+      <a href="Photos-Art.html" class="w3-bar-item w3-button w3-padding-large">PORTFOLIO</a>
+      <a href="Photography.html" class="w3-bar-item w3-button w3-padding-large">PHOTOS</a>
+      <a href="Art.html" class="w3-bar-item w3-button w3-padding-large">ART</a>
+      <a href="Contact-Me.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+      </div>
     </div>
-  </div>
-
-  </div>
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -150,19 +159,6 @@
 
   <!-- End Page Container -->
 </div>
-<script>
-function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
-function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-}
-</script>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
   <p>Find me on social media.</p>
